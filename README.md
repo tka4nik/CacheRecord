@@ -51,21 +51,13 @@ TreeMap был выбран, потому что:
 
 ## Методы 
 
-- `boolean insertRecord(long account, String name, double value)`: Добавляет новую запись в кэш. Возвращает `true`, если вставка прошла успешно, и `false` в противном случае.
-
-- `boolean insertRecord(Record record)`: Добавляет новый `Record` в кэш. Возвращает `true`, если вставка прошла успешно, и `false` в противном случае.
-
-- `boolean deleteRecord(Record record)`: Удаляет указанную запись из кэша. Возвращает `true`, если удаление прошло успешно, и `false` в противном случае.
-
-- `boolean updateRecord(Record oldRecord, Record newRecord)`: Обновляет существующую запись новой. Возвращает `true`, если обновление прошло успешно, и `false` в противном случае.
-
-- `Record getRecordFromAccount(long account)`: Извлекает `Record`, связанный с указанным аккаунтом. Возвращает `null`, если запись не найдена.
-
-- `Record getRecordFromName(String name)`: Извлекает `Record`, связанный с указанным именем. Возвращает `null`, если запись не найдена.
-
-- `Record getRecordFromValue(double value)`: Извлекает `Record`, связанный с указанным значением. Возвращает `null`, если запись не найдена.
-
+- `insertRecord(long account, String name, double value)`: Добавляет новую запись в кэш.
+- `insertRecord(Record record)`: Добавляет новый `Record` в кэш.
+- `deleteRecord(Record record)`: Удаляет указанную запись из кэша.
+- `updateRecord(Record oldRecord, Record newRecord)`: Обновляет существующую запись новой.
+- `Record getRecordFromAccount(long account)`: Извлекает `Record`, связанный с указанным аккаунтом.
+- `Record getRecordFromName(String name)`: Извлекает `Record`, связанный с указанным именем.
+- `Record getRecordFromValue(double value)`: Извлекает `Record`, связанный с указанным значением.
 - `int size()`: Возвращает общее количество записей в кэше.
-
 
 Ткаченко Никита, 2024 год
